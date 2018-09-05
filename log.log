@@ -1,2 +1,21 @@
-{"asctime": "2018-09-05 22:13:45 CST", "levelname": "INFO", "pathname": "/home/hsm/code/DELL_HOME/python/h_logger/h_logger.py", "lineno": 85, "message": "debug"}
-{"asctime": "2018-09-05 22:17:48 CST", "levelname": "INFO", "pathname": "/home/hsm/code/DELL_HOME/python/h_logger/h_logger.py", "lineno": 85, "message": "debug"}
+{"asctime": "2018-09-05 22:27:32 CST", "levelname": "INFO", "pathname": "/home/hsm/code/DELL_HOME/python/h_logger/h_logger.py", "lineno": 75, "message": "debug"}
+{"asctime": "2018-09-05 22:28:00 CST", "levelname": "INFO", "pathname": "/home/hsm/code/DELL_HOME/python/h_logger/h_logger.py", "lineno": 75, "message": "debug"}
+{"asctime": "2018-09-05 22:32:21.%f CST", "levelname": "INFO", "pathname": "/home/hsm/code/DELL_HOME/python/h_logger/h_logger.py", "lineno": 75, "message": "debug"}
+{"asctime": "2018-09-05 22:34:17.%i CST", "levelname": "INFO", "pathname": "/home/hsm/code/DELL_HOME/python/h_logger/h_logger.py", "lineno": 75, "message": "debug"}
+{"asctime": "2018-09-05 22:36:57.%i CST", "msecs": 973.3660221099854, "levelname": "INFO", "pathname": "/home/hsm/code/DELL_HOME/python/h_logger/h_logger.py", "lineno": 75, "message": "debug"}
+{"asctime": "2018-09-05 22:37:18 CST", "msecs": 702.5532722473145, "levelname": "INFO", "pathname": "/home/hsm/code/DELL_HOME/python/h_logger/h_logger.py", "lineno": 75, "message": "debug"}
+{"asctime": "2018-09-05 22:37:35 CST", "msecs": 155.98702430725098, "levelname": "INFO", "pathname": "/home/hsm/code/DELL_HOME/python/h_logger/h_logger.py", "lineno": 75, "message": "debug"}
+{"asctime": "2018-09-05 22:37:51 CST", "msecs": 978.9156913757324, "levelname": "INFO", "pathname": "/home/hsm/code/DELL_HOME/python/h_logger/h_logger.py", "lineno": 75, "message": "debug"}
+{"asctime": "2018-09-05 22:40:21 CST", "msecs": 684.8571300506592, "levelname": "INFO", "pathname": "/home/hsm/code/DELL_HOME/python/h_logger/h_logger.py", "lineno": 68, "message": "debug"}
+{"asctime": "2018-09-05 22:40:34 CST", "msecs": 636.3718509674072, "levelname": "INFO", "pathname": "/home/hsm/code/DELL_HOME/python/h_logger/h_logger.py", "lineno": 68, "message": "debug"}
+{"asctime": "2018-09-05 22:41:16 CST", "msecs": 185.26840209960938, "levelname": "INFO", "message": "debug", "lineno": 68}
+{"asctime": "2018-09-05 22:41:27 CST", "msecs": 411.2837314605713, "levelname": "INFO", "message": "debug"}
+{"asctime": "2018-09-05 22:43:30 CST", "msecs": 524.3592262268066, "levelname": "INFO", "message": "debug", "special": "value", "run": 12}
+{"asctime": "2018-09-05 22:44:35 CST", "msecs": 451.3976573944092, "levelname": "INFO", "message": "\u8fd9\u662f\u4e2d\u6587", "special": "value", "run": 12}
+{"asctime": "2018-09-05 22:47:16 CST", "msecs": 252.82549858093262, "levelname": "INFO", "message": "\u8fd9\u662f\u4e2d\u6587", "special": "value", "run": 12}
+{"asctime": "2018-09-05 22:50:48 CST", "msecs": 339.993953704834, "levelname": "INFO", "message": "\u8fd9\u662f\u4e2d\u6587", "special": "value", "run": 12}
+2018-09-05 22:51:56 CST 174 INFO 这是中文
+{"asctime": "2018-09-05 22:52:45 CST", "msecs": 147.2494602203369, "levelname": "INFO", "message": "\u8fd9\u662f\u4e2d\u6587", "special": "value", "run": 12}
+{"asctime": "2018-09-05 23:00:42 CST", "msecs": 63.714027404785156, "levelname": "INFO", "message": "\u8fd9\u662f\u4e2d\u6587", "special": "value", "run": 12}
+{"asctime": "2018-09-05 23:07:33 CST", "msecs": 252.06756591796875, "levelname": "INFO", "message": "\u8fd9\u662f\u4e2d\u6587", "special": "value", "run": 12}
+{"asctime": "2018-09-05 23:14:42 CST", "msecs": 909.9321365356445, "levelname": "INFO", "message": "这是中文", "special": "value", "run": 12}

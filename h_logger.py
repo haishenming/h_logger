@@ -1,7 +1,6 @@
+import json
 import logging.config
-import structlog
-from structlog import configure, processors, stdlib, threadlocal
-#
+
 log_level_map = {
     'debug': logging.DEBUG,
     'info': logging.INFO,
@@ -15,9 +14,10 @@ base_set = {
     'disable_existing_loggers': False,
     'formatters': {
         'json': {
-            'format': '%(asctime)s %(levelname)s %(pathname)s %(lineno)d %(message)s %(lineno)d',
+            'format': '%(asctime)s %(msecs)03d %(levelname)s %(message)s',
             'datefmt': "%Y-%m-%d %H:%M:%S %Z",
-            'class': 'pythonjsonlogger.jsonlogger.JsonFormatter'
+            'json_ensure_ascii': False,
+            'class': 'logFormat.HJsonLogFormat'
         }
     },
     'handlers': {
@@ -42,21 +42,6 @@ class Logger:
         self.filename = filename
         self.log_set = self.__format_logger_set()
         logging.config.dictConfig(self.log_set)
-        configure(
-            # context_class=threadlocal.wrap_dict(dict),
-            logger_factory=stdlib.LoggerFactory(),
-            # wrapper_class=stdlib.BoundLogger,
-            processors=[
-                # stdlib.filter_by_level,
-                # stdlib.add_logger_name,
-                # stdlib.add_log_level,
-                # stdlib.PositionalArgumentsFormatter(),
-                # processors.TimeStamper(fmt="iso"),
-                # processors.StackInfoRenderer(),
-                # processors.format_exc_info,
-                # processors.UnicodeDecoder(),
-                stdlib.render_to_log_kwargs]
-        )
 
     def __format_logger_set(self):
         logger_set = base_set
@@ -65,10 +50,10 @@ class Logger:
         if self.filename:
             file_handler = {
                 'file': {
-                    'class': 'logging.FileHandler',
+                    'class': 'logging.handlers.TimedRotatingFileHandler',
                     'formatter': 'json',
+                    'when': 'H',
                     'filename': self.filename,
-                    'mode': 'a'
                 }
             }
             logger_set['handlers'].update(file_handler)
@@ -82,7 +67,7 @@ class Logger:
         pass
 
     def __output_log(self, level, msg):
-        getattr(self.logger, level)(msg)
+        getattr(self.logger, level)(msg, extra={"special": "value", "run": 12})
 
     def debug(self, msg=''):
         self.__output_log('debug', msg)
