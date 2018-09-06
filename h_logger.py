@@ -17,7 +17,7 @@ base_set = {
             'format': '%(asctime)s %(msecs)03d %(levelname)s %(message)s',
             'datefmt': "%Y-%m-%d %H:%M:%S %Z",
             'json_ensure_ascii': False,
-            'class': 'logFormat.HJsonLogFormat'
+            'class': 'log_format.HJsonLogFormat'
         }
     },
     'handlers': {
